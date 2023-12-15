@@ -60,31 +60,36 @@
     
     <h2>Do you find me interessting ? If so say so! 😊</h2>
 
-    <form >
-        <table>
+    <form  name="Myform">
+        <table style="border: none;">
             <tr>
-                <td><label>Name:</label></td>
-                <td><input type="text" ></td>
+                <td style="border: none;"><label>Name:</label></td>
+                <td style="border: none;"><input type="text" id="name" onkeyup="nameValidation()"></td>
+                <td style="border: none;"><span id="nameError" style="color: red;"></span></td>
             </tr>
             <tr>
-                <td><label>Email:</label></td>
-                <td><input type="email" ></td>
+                <td style="border: none;"><label>Email:</label></td>
+                <td style="border: none;"><input type="email" id="email" ></td>
+                <td style="border: none;"><span id="emailError" style="color: red;"></span></td>
             </tr>
             <tr>
-                <td><label>Phone:</label></td>
-                <td><input type="text" ></td>
+                <td style="border: none;"><label>Phone:</label></td>
+                <td style="border: none;"><input type="text" id="phone" onkeyup="phoneValidation()"></td>
+                <td style="border: none;"><span  id="phoneError" style="color: red;"></span></td>
             </tr>
             <tr>
-                <td><label>Company:</label></td>
-                <td><input type="text"></td>
+                <td style="border: none;"><label>Company:</label></td>
+                <td style="border: none;"><input type="text" id="cmp"></td>
+                <td style="border: none;"><span id="cmpError" style="color: red;"></span></td>
             </tr>
             <tr>
-                <td><label>Position:</label></td>
-                <td><input type="text" ></td>
+                <td style="border: none;"><label>Position:</label></td>
+                <td style="border: none;"><input type="text" id="pos"></td>
+                <td style="border: none;"><span id="posError" style="color: red;"></span></td>
             </tr>
             <tr>
-                <td><label>Gender:</label></td>
-                <td>
+                <td style="border: none;"><label>Gender:</label></td>
+                <td style="border: none;">
                     <select name="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -93,15 +98,15 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="2" style="border: none;">
                     <label>
                         <input type="checkbox" > Check this button for fun
                     </label>
                 </td>
             </tr>
             <tr>
-                <td><label>Preferred Contact Method:</label></td>
-                <td>
+                <td style="border: none;"><label>Preferred Contact Method:</label></td>
+                <td style="border: none;">
                     <select >
                         <option value="email">Email</option>
                         <option value="phone">Phone</option>
@@ -109,12 +114,14 @@
                 </td>
             </tr>
             <tr>
-                <td><label>Message:</label></td>
-                <td><textarea name="message" rows="4" ></textarea></td>
+                <td style="border: none;"><label>Message:</label></td>
+                <td style="border: none;"><textarea name="message" rows="4" id="msg" ></textarea></td>
+                <td style="border: none;"><span id="msgError" style="color: red;"></span></td>
             </tr>
         </table>
 
         <button type="submit">Submit</button>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
